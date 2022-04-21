@@ -10,13 +10,13 @@ function ButtonWithHook() {
 
     useEffect(
         () => {
-                console.log("render")
-                fetch('https://restcountries.com/v3.1/all')
-                    .then(res => res.json())
-                    .then(countriesData => setCountries(countriesData))
-            },
-            []
-        )
+            console.log("render")
+            fetch('https://restcountries.com/v3.1/all')
+                .then(res => res.json())
+                .then(countriesData => setCountries(countriesData))
+        },
+        []
+    )
 
     return (
         <div>
@@ -29,7 +29,7 @@ function ButtonWithHook() {
                 {countries.map( (country, index) => <div key={index}>{country.name.common}</div> )}
             </div>
         </div>
-  )
+    )
 }
 
 export default ButtonWithHook;
