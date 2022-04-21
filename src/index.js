@@ -1,19 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import reportWebVitals from './reportWebVitals';
-import ButtonWithClass from './component/ButtonWithClass';
+/* import ButtonWithClass from './component/ButtonWithClass'; */
 import ButtonWithHook from './component/ButtonWithHook';
+/* import ButtonWithHook2 from './component/ButtonWithHook2'; */
 import Header from './component/Header';
-import ButtonWithHook2 from './component/ButtonWithHook2';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <Header to="This is the end of the header"/>
-    <ButtonWithClass />
+    {/* <ButtonWithClass /> */}
     <ButtonWithHook />
-    <ButtonWithHook2 />
+    {/* <ButtonWithHook2 /> */}
   </React.StrictMode>
 );
 
